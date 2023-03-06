@@ -1,0 +1,22 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/Catalog",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 40660
+        }
+      ],
+      "UpstreamPathTemplate": "/Catalog",
+      "UpstreamHttpMethod": [ "GET", "POST", "DELETE" ]
+    }
+  ],
+  "GlobalConfiguration": {},
+  "QoSOptions": {
+    "ExceptionsAllowedBeforeBreaking": 99999,
+    "DurationOfBreak": 0,
+    "TimeoutValue": 5000
+  }
+}
